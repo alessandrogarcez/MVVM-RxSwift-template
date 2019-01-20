@@ -8,7 +8,6 @@
 
 import UIKit
 import RxSwift
-import RxAtomic
 
 private var cellIdentifier: String { return "UITableViewCell" }
 
