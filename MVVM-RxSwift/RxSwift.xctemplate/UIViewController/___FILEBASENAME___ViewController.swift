@@ -7,30 +7,23 @@
 //
 
 import UIKit
+import RxSwift
 
 class ___VARIABLE_sceneName___ViewController: UIViewController {
-
+    
     var interactor: ___VARIABLE_sceneName___Interactor?
-
+    private let bag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setup()
-        self.interactor?.provideInitialState()
+        setup()
+        bind()
     }
 
-    private func setup() {
-        
+    private func setup(){
     }
-
+    
+    private func bind() {
+    }
+    
 }
-
-//MARK: - ___VARIABLE_sceneName___InteractorDelegate
-extension ___VARIABLE_sceneName___ViewController: ___VARIABLE_sceneName___InteractorDelegate {
-
-    func reloadViewState() {
-        
-    }
-
-}
-
-

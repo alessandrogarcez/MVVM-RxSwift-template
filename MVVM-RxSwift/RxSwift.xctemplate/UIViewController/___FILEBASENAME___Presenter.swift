@@ -8,6 +8,11 @@
 
 import Foundation
 
-struct ___VARIABLE_sceneName___Module {
+protocol ___VARIABLE_sceneName___PresenterInput: class {
+    
+}
+
+class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresenterInput {
+    
     
 }

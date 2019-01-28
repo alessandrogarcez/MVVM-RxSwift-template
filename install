@@ -1,7 +1,9 @@
 #!/bin/bash
 
-mkdir -p ~/Library/Developer/Xcode/Templates/File\ Templates/MVVM
-rm -rf ~/Library/Developer/Xcode/Templates/File\ Templates/MVVM
-cp -R ./MVVM ~/Library/Developer/Xcode/Templates/File\ Templates/
+export template_name="MVVM-RxSwift"
+
+mkdir -p ~/Library/Developer/Xcode/Templates/File\ Templates/$template_name
+rm -rf ~/Library/Developer/Xcode/Templates/File\ Templates/$template_name
+cp -R ./$template_name ~/Library/Developer/Xcode/Templates/File\ Templates/
 echo "########## INSTALLED ##########"
 

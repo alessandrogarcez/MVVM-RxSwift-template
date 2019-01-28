@@ -7,16 +7,20 @@
 //
 
 import Foundation
-
-protocol ___VARIABLE_sceneName___InteractorDelegate: class {
-    func reloadViewState()
-}
+import RxSwift
 
 class ___VARIABLE_sceneName___Interactor {
 
-    weak var delegate: ___VARIABLE_sceneName___InteractorDelegate?
-    var router: ___VARIABLE_sceneName___RouterInput?
-
-    func provideInitialState(){}
+    private let router: ___VARIABLE_sceneName___RouterInput
+    private let presenter: ___VARIABLE_sceneName___PresenterInput
+    
+    init(router: ___VARIABLE_sceneName___RouterInput, presenter: ___VARIABLE_sceneName___PresenterInput) {
+        self.router = router
+        self.presenter = presenter
+        provideInitialState()
+    }
+    
+    private func provideInitialState() {
+    }
 
 }

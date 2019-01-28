@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>DefaultCompletionName</key>
-	<string>DelegateAndStoryboard</string>
+	<string>MVVM with RxSwift</string>
 	<key>Description</key>
 	<string>This generates a new scene using MVVM architeture.</string>
 	<key>Kind</key>
@@ -34,7 +34,7 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___ViewController</string>
+			<string>___VARIABLE_sceneName:identifier___ViewController.swift</string>
 			<key>Description</key>
 			<string>The view controller name</string>
 			<key>Identifier</key>
@@ -48,7 +48,7 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Interactor</string>
+			<string>___VARIABLE_sceneName:identifier___Interactor.swift</string>
 			<key>Description</key>
 			<string>The interactor name</string>
 			<key>Identifier</key>
@@ -62,7 +62,7 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Router</string>
+			<string>___VARIABLE_sceneName:identifier___Router.swift</string>
 			<key>Description</key>
 			<string>The router name</string>
 			<key>Identifier</key>
@@ -76,13 +76,13 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Configurator</string>
+			<string>___VARIABLE_sceneName:identifier___Presenter.swift</string>
 			<key>Description</key>
 			<string>The configurator name</string>
 			<key>Identifier</key>
-			<string>configuratorName</string>
+			<string>presenterName</string>
 			<key>Name</key>
-			<string>Configurator Name:</string>
+			<string>Presenter Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -90,13 +90,41 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Definitions</string>
+			<string>___VARIABLE_sceneName:identifier___Coordinator.swift</string>
 			<key>Description</key>
-			<string>The definitions file name</string>
+			<string>The coordinator file name</string>
 			<key>Identifier</key>
-			<string>definitionsName</string>
+			<string>coordinatorName</string>
 			<key>Name</key>
-			<string>Definitions Name:</string>
+			<string>Coordinator Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___.storyboard</string>
+			<key>Description</key>
+			<string>The storyboard file name</string>
+			<key>Identifier</key>
+			<string>storyboardName</string>
+			<key>Name</key>
+			<string>Storyboard Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___.strings</string>
+			<key>Description</key>
+			<string>The strings file name</string>
+			<key>Identifier</key>
+			<string>stringsName</string>
+			<key>Name</key>
+			<string>Strings Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -106,7 +134,7 @@
 			<key>Default</key>
 			<string>UIViewController</string>
 			<key>Description</key>
-			<string>What view controller class to subclass for the new scene</string>
+			<string>Which view controller class to subclass for the new scene</string>
 			<key>FallbackHeader</key>
 			<string>#import &lt;UIKit/UIKit.h&gt;</string>
 			<key>Identifier</key>
@@ -122,7 +150,6 @@
 			<key>Values</key>
 			<array>
 				<string>UIViewController</string>
-				<string>UITableViewController</string>
 			</array>
 		</dict>
 	</array>
